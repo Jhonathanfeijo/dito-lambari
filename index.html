@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -55,8 +56,8 @@
                 <p>Nós fornecemos os melhores frutos do mar frescos da região. Explore nosso site para saber mais sobre
                     nós e nossos produtos.</p>
             </div>
-            <div>
-                <img src="peixaria.png" alt="">
+            <div class="col-12">
+                <img class="img-peixaria" src="peixaria.png">
             </div>
         </div>
     </div>
@@ -70,7 +71,11 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        $(document).ready(function () {
+            $('img').addClass("rounded-lg")
+        })
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
